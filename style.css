@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1f1e1e;
+    color: rgb(179, 116, 116);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+    .container{
+        
+        width: 100%;
+        min-height: 100vh;
+        padding-left:8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        overflow: hidden;
+        
+        /* align-items: center;
+        justify-content: center; */
+        
+        
+    }
+    /* Calling by class */
+    .logo {
+        border-radius: 50%;
+    }
+
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .logo{
+        width: 50px;
+        cursor: pointer;
+        margin: 30px 0;
+
+    }
+
+    .menu_icon{
+        width: 25px;
+        cursor: pointer;
+        
+    }
+
+    nav{
+        flex: 1;
+        text-align: right ;
+
+    }
+
+    nav ul li{
+        text-decoration : none;
+        display: inline-block;
+        margin-right: 30px;
+        
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: #f1eaea;
+        font-size: 16px;
+        /* transition-timing-function: ease-out; */
+
+
+    }
+
+    nav ul li a:hover {
+        color: #ff5ea2;
+        font-size: 16px;
+        
+    }
+
+    /* Editing row class */
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0;
+
+    }
+
+    .col_1{
+        flex-basis: 40%;
+        position: relative;
+        margin-left: 50px;
+    }
+
+
+
+
+    .col_1 h2{
+        font-size: 45px;
+        color: rgb(179, 116, 116);
+    }
+
+    .col_1 h3{
+        font-size: 25px;
+        color: rgb(148, 94, 94);
+    }
+    .col_1 p{
+        color: rgb(120, 78, 78);
+        font-weight: 100;
+        font-size: 16px;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+
+    .col_1::after{
+        content: '';
+        width: 10px;
+        height: 5rem;
+        /* Rem is preffered in the height as it wont be relative to the screen size */
+        background: linear-gradient(#ff469f, #ff6062);
+        position: absolute;
+        left: -40px;
+        top: 8px;
+    }
+
+    .col_2_profile_box{
+        background: #ff574a;
+        text-align: center;
+        
+        position: relative;
+        /* add margin left in media query */
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px 50px;
+        border-radius: 10%;
+        box-shadow: 2px 10px 15px rgb(218, 151, 28);
+    }
+
+
+    .col_2_profile_box .menu_icon{
+        margin: 1rem 1rem;
+        width: 15rem;
+        padding: 6px;
+        background: #fff;
+        border-radius: 10rem;
+        margin-top: 40px;
+    }
+    .col_2_profile_box h3{
+        color:#f1eaea;
+        font-weight: 500;
+        background-color: transparent;
+    }
+    .col_2_profile_box p{
+        color: white;
+        background-color: transparent;
+    }
+    .git{
+        /* background: #ff574a; */
+        background-color: #ff574a;
+            
+    }
+    .git a img{
+        width: 20%;
+        height: 10%;
+        margin-top: 1rem;
+        background: #ff574a;
+        margin-left: 7rem;
+        display: block;
+        /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
+        
+        
+    }
+
+    .bottom_profile{
+        margin-top: 1rem;
+        background: #fff;
+        /* color: #1b1919; /*nested p tag unable to inherit color property * */
+        padding: 30px 0;
+        /* padding : rem 0; */
+        margin-right: -50px;
+        margin-left: -50px;
+        margin-bottom: -20px;
+        border-radius: 20px;
+        box-shadow: 0px 8px 15px rgb(218, 151, 28);
+        
+    }
+    .bottom_profile p{
+        color: #999;
+    }
+
+@media only screen and (max-width: 990px) {
+    .container{
+        width: 100%;
+        
+    
+    }
+    .navbar{
+        width: 100%;
+        display: flex!important;
+        /* background: linear-gradient(#ff54a2, #ff575a); */
+        align-items: center;
+    }
+    nav{
+        flex: 1;
+        text-align: left;
+    }
+    nav ul li a:hover{
+        color: #CC00FF;
+        
+    }
+    .row{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 2%;
+    }
+    .col_1, .col_2_profile_box{
+        flex: 100%;
+    }
+    .git a img{
+        width: 20%;
+        height: 10%;
+        margin-top: 1rem;
+        background: #ff574a;
+        margin-left: 40%;
+        display: block;
+        /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
+        
+        
+    }
+}
+
