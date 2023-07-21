@@ -67,11 +67,29 @@
 
     }
 
+    /*
+    Edited on 21-07-23
+    */
+    nav ul li a::after{
+        content: "";
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: #2bd576;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        
+    }
+    nav ul li a:hover::after{
+        transform: scaleX(1);
+    }
     nav ul li a:hover {
         color: #ff5ea2;
         font-size: 16px;
         
     }
+
 
     /* Editing row class */
     .row{
