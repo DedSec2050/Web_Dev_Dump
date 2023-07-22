@@ -151,11 +151,13 @@
         box-shadow: 2px 10px 15px rgb(218, 151, 28);
     }
 
-
+    /* Edited on 22-07-23 */
     .col_2_profile_box .menu_icon{
         margin: 1rem 1rem;
-        width: 15rem;
+        /* For variable width  */
+        width: 20vmax;
         padding: 6px;
+        justify-content: center;
         background: #fff;
         border-radius: 10rem;
         margin-top: 40px;
@@ -172,15 +174,14 @@
     .git{
         /* background: #ff574a; */
         background-color: #ff574a;
-            
     }
     .git a img{
         width: 20%;
         height: 10%;
         margin-top: 1rem;
         background: #ff574a;
-        margin-left: 7rem;
-        display: block;
+        margin-left: 40%;
+        display: flex;
         /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
         
         
@@ -242,6 +243,16 @@
         /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
         
         
+    }
+    .col_2_profile_box .menu_icon{
+        margin: 1rem 1rem;
+        /* For variable width  */
+        width: 75%;
+        padding: 6px;
+        justify-content: center;
+        background: #fff;
+        border-radius: 10rem;
+        margin-top: 40px;
     }
 }
 
