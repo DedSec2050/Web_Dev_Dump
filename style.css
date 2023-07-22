@@ -131,7 +131,7 @@
         content: '';
         width: 10px;
         height: 5rem;
-        /* Rem is preffered in the height as it wont be relative to the screen size */
+        /* Rem is preffered in the height as it will be relative to the screen size */
         background: linear-gradient(#ff469f, #ff6062);
         position: absolute;
         left: -40px;
