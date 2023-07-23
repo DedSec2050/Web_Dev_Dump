@@ -1,11 +1,27 @@
 # Web_Dev_Dump
 This is a simple webpage made using html and css.
+
+    
+## Portrait View
+
+![portrait](https://github.com/DedSec2050/Web_Dev_Dump/assets/119126965/2bbe9dff-764e-408a-9bc2-bde7f2c36299)
+
+## Landscape View
+
+![Landscape](https://github.com/DedSec2050/Web_Dev_Dump/assets/119126965/7a39b71a-9d86-4290-a110-e400c68962a8)
+
+## Buttons
+
+![icons](https://github.com/DedSec2050/Web_Dev_Dump/assets/119126965/2bf517c1-14a4-4548-8dd2-46476f1ac08e)
+
+
+
 ## Media Query Usage
 <h2>For devices having width: 400px < w < 990 px </h2>
 <ul>
   <li>The <b>display</b> of the elements of <b>row</b> class is set to <b>block</b> type. In order to get the elements of the div in next line. </li>
   <li>The <b>flex<b> attribute is set to 1 in order to set flex-grow: 1 , flex-shrink:1 and flex-basis: 0, so that the elements of the nav bar take equal spacing.</li>
-</ul>                                      
+</ul>  
 
 
 
