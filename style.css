@@ -75,7 +75,7 @@
         display: block;
         height: 4px;
         width: 100%;
-        background-color: #2bd576;
+        background-color: #df493e;
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.3s ease;
@@ -156,7 +156,6 @@
         margin: 1rem 1rem;
         /* For variable width  */
         width: 20vmax;
-        padding: 6px;
         justify-content: center;
         background: #fff;
         border-radius: 10rem;
@@ -171,21 +170,106 @@
         color: white;
         background-color: transparent;
     }
-    .git{
-        /* background: #ff574a; */
+
+    .wrapper{
+        padding: 3vh 1dvw;
+        display: inline-flex;
         background-color: #ff574a;
     }
-    .git a img{
-        width: 20%;
-        height: 10%;
-        margin-top: 1rem;
+    .wrapper .icon{
+        margin: 0px 2vw;
         background: #ff574a;
-        margin-left: 40%;
-        display: flex;
-        /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
         
+        display: flex;
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    }
+    .wrapper .icon span{
+        position : relative;
+        height: 1.955em;
+        width: 1.95em;
+        display: block;
+        background: #fff;
+        text-align: top;
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    }
+    .wrapper .icon span{
+        position: relative;
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    
+    .wrapper .icon:hover span i{
+        color: #fff;
+    }
+
+    .wrapper .icon .tooltip{
+        position: absolute;
+        top: 0px;
+        color: #fff;
+        background: #fff;
+        padding: 10px 18px;
+        border-radius: 25px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+    }
+    .wrapper .icon:hover .tooltip{
+        opacity: 1;
+        pointer-events: auto;
+        top: -70px;
         
     }
+    .wrapper .icon:hover span,
+    .wrapper .icon:hover .tooltip{
+        text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+    }
+    
+    .wrapper .facebook:hover span,
+    .wrapper .facebook:hover .tooltip,
+    .wrapper .facebook:hover .tooltip:before{
+        background: #3B5999;
+    }
+    .wrapper .twitter:hover span,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip:before{
+        background: #46C1F6;
+    }
+    .wrapper .github:hover span,
+    .wrapper .github:hover .tooltip,
+    .wrapper .github:hover .tooltip:before{
+        background: #333;
+    }
+    .wrapper .youtube:hover .tooltip,
+    .wrapper .youtube:hover span,
+    .wrapper .youtube:hover .tooltip:before{
+        background: #DE463B;
+    }
+    .wrapper .icon .tooltip:before{
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        background: #fff;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    
+    }
+
+
+
+
+
+
 
     .bottom_profile{
         margin-top: 1rem;
@@ -204,7 +288,56 @@
         color: #999;
     }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 400px) {
+    .wrapper{
+        padding: 0.75vh 0vw;
+    }
+    .col_2_profile_box .menu_icon{
+        margin: 1rem 1rem;
+        /* For variable width  */
+        width: 75%;
+        padding: 6px;
+        justify-content: center;
+        background: #fff;
+        border-radius: 10rem;
+        margin-top: 40px;
+    }
+    .row{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 2%;
+    }
+    .col_1, .col_2_profile_box{
+        flex: 100%;
+        margin-left: 0.1vw;
+        margin-right: 0.5vw;
+    }
+    .col_2_profile_box{
+        overflow: hidden;
+        justify-content: center;
+    }
+    .wrapper .icon span{
+        position: relative;
+        font-size: 1em;
+        line-height: 1.49em;
+    }
+    .wrapper .icon span{
+        position : relative;
+        height: 1.4em;
+        width: 1.4em;
+        display: block;
+        background: #fff;
+        text-align: top;
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    }
+    
+    
+}
+
+@media only screen and (max-width: 990px) and (min-width: 400px) {
     .container{
         width: 100%;
         
@@ -232,18 +365,10 @@
     }
     .col_1, .col_2_profile_box{
         flex: 100%;
+        margin-left: 1vw;
+        margin-right: 1vw;
     }
-    .git a img{
-        width: 20%;
-        height: 10%;
-        margin-top: 1rem;
-        background: #ff574a;
-        margin-left: 40%;
-        display: block;
-        /* When display is set to inline a weird underline occurs, dunno what's the problem will explore on it later  */
-        
-        
-    }
+    
     .col_2_profile_box .menu_icon{
         margin: 1rem 1rem;
         /* For variable width  */
@@ -254,5 +379,47 @@
         border-radius: 10rem;
         margin-top: 40px;
     }
+
+
+
+
+
+
+
+    .wrapper{
+        padding: 3vh 1.5vw;
+        display: inline-flex;
+        background-color: #ff574a;
+    }
+    .wrapper .icon{
+        margin: 0px 2vw;
+        background: #ff574a;
+        
+        display: flex;
+        z-index: 2;
+        position: relative;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    }
+    .wrapper .icon span{
+        position : relative;
+        height: 1.955em;
+        width: 1.95em;
+        display: block;
+        background: #fff;
+        text-align: top;
+        border-radius: 50%;
+        z-index: 2;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    }
+    .wrapper .icon span{
+        position: relative;
+        font-size: 1em;
+        line-height: 2em;
+    }
+    
 }
 
