@@ -205,12 +205,16 @@
         position: relative;
         font-size: 1.5em;
         line-height: 2em;
+        background: transparent;
+        text-decoration: none;
+    }
+    .wrapper .icon span a{
+        background: transparent;
     }
     
     .wrapper .icon:hover span i{
         color: #fff;
     }
-
     .wrapper .icon .tooltip{
         position: absolute;
         top: 0px;
