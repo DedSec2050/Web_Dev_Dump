@@ -205,7 +205,7 @@
         position: relative;
         font-size: 1.5em;
         line-height: 2em;
-        background: transparent;
+        background: #fff;
         text-decoration: none;
     }
     .wrapper .icon span a{
